@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#gradient-canvas {
+  width:100%;
+  height:100%;
+  --gradient-color-1: #00008B; 
+  --gradient-color-2: #000080; 
+  --gradient-color-3: #191970;  
+  --gradient-color-4: #1E90FF;
+}
+
+.font-wide {
+  font-stretch: 125%;
+}
