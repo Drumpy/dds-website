@@ -31,7 +31,7 @@ function Hero() {
           </h1>
           <motion.p
             variants={riseWithFade}
-            className="text-lg sm:text-2xl font-bold tracking-[6px] text-blue-100/80 drop-shadow uppercase max-w-[200px] sm:max-w-none"
+            className="text-lg sm:text-2xl font-medium tracking-[6px] text-blue-100/80 drop-shadow uppercase max-w-[300px] sm:max-w-none mx-auto"
           >
             Creative Developer
           </motion.p>
