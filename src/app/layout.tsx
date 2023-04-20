@@ -3,7 +3,6 @@ import "../assets/globals.css";
 
 const hubot = localFont({
   src: "./Hubot-Sans.woff2",
-  display: "swap",
 });
 
 export const metadata = {
