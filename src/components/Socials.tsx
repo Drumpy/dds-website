@@ -1,9 +1,9 @@
 function Socials() {
   return (
-    <div className="flex justify-center gap-20">
+    <div className="flex justify-center gap-10 sm:gap-20">
       <a
         href="#"
-        className="group w-24 h-24 rounded-full bg-gradient-to-t from-[#242428] via-transparent to-[#242428] hover:bg-gradient-to-t hover:from-[#0e37ac] hover:via-transparent hover:to-[#0e37ac] p-[2px] transition-all"
+        className="group w-[70px] sm:w-24 aspect-square rounded-full bg-gradient-to-t from-[#242428] via-transparent to-[#242428] hover:bg-gradient-to-t hover:from-[#0e37ac] hover:via-transparent hover:to-[#0e37ac] p-[2px] transition-all"
       >
         <span className="inline-flex justify-center items-center w-full h-full rounded-full text-[#E3E2F9] bg-[#101012] group-hover:bg-[#0e37ac] group-hover:transition-all">
           <svg
@@ -21,7 +21,7 @@ function Socials() {
       </a>
       <a
         href="#"
-        className="group w-24 h-24 rounded-full bg-gradient-to-t from-[#242428] via-transparent to-[#242428] hover:bg-gradient-to-t hover:from-[#0e37ac] hover:via-transparent hover:to-[#0e37ac] p-[2px] transition-all"
+        className="group w-[70px] sm:w-24 aspect-square rounded-full bg-gradient-to-t from-[#242428] via-transparent to-[#242428] hover:bg-gradient-to-t hover:from-[#0e37ac] hover:via-transparent hover:to-[#0e37ac] p-[2px] transition-all"
       >
         <span className="inline-flex justify-center items-center w-full h-full rounded-full text-[#E3E2F9] bg-[#101012] group-hover:bg-[#0e37ac] group-hover:transition-all">
           <svg
@@ -37,7 +37,7 @@ function Socials() {
       </a>
       <a
         href="#"
-        className="group w-24 h-24 rounded-full bg-gradient-to-t from-[#242428] via-transparent to-[#242428] hover:bg-gradient-to-t hover:from-[#0e37ac] hover:via-transparent hover:to-[#0e37ac] p-[2px] transition-all"
+        className="group w-[70px] sm:w-24 aspect-square rounded-full bg-gradient-to-t from-[#242428] via-transparent to-[#242428] hover:bg-gradient-to-t hover:from-[#0e37ac] hover:via-transparent hover:to-[#0e37ac] p-[2px] transition-all"
       >
         <span className="inline-flex justify-center items-center w-full h-full rounded-full text-[#E3E2F9] bg-[#101012] group-hover:bg-[#0e37ac] group-hover:transition-all">
           <svg
