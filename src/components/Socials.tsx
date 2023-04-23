@@ -1,6 +1,6 @@
 function Socials() {
   return (
-    <div className="flex justify-center gap-10 py-20 sm:gap-20">
+    <div className="flex justify-center gap-10 sm:gap-20">
       <a
         href="https://github.com/Drumpy"
         target="_blank"
