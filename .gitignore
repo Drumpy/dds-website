@@ -15,6 +15,7 @@
 # production
 /build
 /dist
+.jampack
 
 # misc
 .DS_Store
