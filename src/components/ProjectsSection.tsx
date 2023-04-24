@@ -33,7 +33,7 @@ function ProjectsSection() {
       </div>
 
       <article className="bg-gradient-to-r from-[#242428] via-transparent to-[#242428] py-[1px]">
-        <div className="min-h-72 bg-[#101012] flex">
+        <div className="min-h-72 bg-[#101012] flex flex-col-reverse lg:flex-row">
           <div className="flex-1">
             <div className="flex flex-col h-full p-12">
               <div className="inline-flex items-center gap-2 mb-4">
@@ -42,7 +42,7 @@ function ProjectsSection() {
                   <ExternalIcon className="w-4 h-4 text-gray-300" />
                 </a>
               </div>
-              <p className="mb-1 text-gray-300">
+              <p className="mb-2 text-gray-300">
                 Complete solution to control inventory and sales, allowing you
                 to create products and categories, manage sales, customers and
                 vendors in an intuitive and interactive interface.
@@ -52,7 +52,7 @@ function ProjectsSection() {
                 always know how much is available for sale, helping to simplify
                 the tracking process and optimize workflow efficiency.
               </p>
-              <div className="flex items-center gap-4 mt-auto">
+              <div className="flex items-center gap-4 pt-6 mt-auto">
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
@@ -158,7 +158,7 @@ function ProjectsSection() {
               </div>
             </div>
           </div>
-          <div className="flex-1 overflow-hidden transition-all duration-200 bg-blue-900 group opacity-80 hover:opacity-100">
+          <div className="flex items-center flex-1 overflow-hidden transition-all duration-200 bg-blue-900 group opacity-80 hover:opacity-100">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="./images/stocknow.webp"
@@ -170,13 +170,13 @@ function ProjectsSection() {
       </article>
 
       <article className="bg-gradient-to-r from-[#242428] via-transparent to-[#242428] py-[1px]">
-        <div className="min-h-72 bg-[#101012] flex flex-row-reverse">
+        <div className="min-h-72 bg-[#101012] flex flex-col-reverse lg:flex-row-reverse">
           <div className="flex-1">
-            <div className="flex flex-col h-full p-12 ">
+            <div className="flex flex-col h-full p-12">
               <div className="inline-flex items-center gap-2 mb-4">
                 <h3 className="text-2xl font-normal">Efecto Diálogo</h3>
               </div>
-              <p className="mb-1 text-gray-300">
+              <p className="mb-2 text-gray-300">
                 Web project that showcases the thesis work carried out by
                 Communication degree students from the University of Montevideo.
               </p>
@@ -186,7 +186,7 @@ function ProjectsSection() {
                 animations using the GSAP library, which added an additional
                 layer of interactivity to the site.
               </p>
-              <div className="flex items-center gap-4 mt-auto">
+              <div className="flex items-center gap-4 pt-6 mt-auto">
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
@@ -258,7 +258,7 @@ function ProjectsSection() {
               </div>
             </div>
           </div>
-          <div className="flex-1 overflow-hidden transition-all duration-200 bg-zinc-900 group opacity-80 hover:opacity-100">
+          <div className="flex items-center flex-1 overflow-hidden transition-all duration-200 bg-zinc-900 group opacity-80 hover:opacity-100">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="./images/efectodialogo.webp"
@@ -270,9 +270,9 @@ function ProjectsSection() {
       </article>
 
       <article className="bg-gradient-to-r from-[#242428] via-transparent to-[#242428] py-[1px]">
-        <div className="min-h-72 bg-[#101012] flex">
+        <div className="min-h-72 bg-[#101012] flex flex-col-reverse lg:flex-row">
           <div className="flex-1">
-            <div className="flex flex-col h-full p-12 ">
+            <div className="flex flex-col h-full p-12">
               <div className="inline-flex items-center gap-2 mb-4">
                 <h3 className="text-2xl font-normal">Agenda de Pacientes</h3>
               </div>
@@ -282,7 +282,7 @@ function ProjectsSection() {
                 nostrum minus qui eaque asperiores blanditiis ad maxime labore,
                 molestias atque velit dolorem expedita?
               </p>
-              <div className="flex items-center gap-4 mt-auto">
+              <div className="flex items-center gap-4 pt-6 mt-auto">
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
@@ -388,7 +388,7 @@ function ProjectsSection() {
               </div>
             </div>
           </div>
-          <div className="flex-1 overflow-hidden transition-all duration-200 bg-emerald-900 group opacity-80 hover:opacity-100">
+          <div className="flex items-center flex-1 overflow-hidden transition-all duration-200 bg-emerald-900 group opacity-80 hover:opacity-100">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="./images/agenda-clinica.webp"
