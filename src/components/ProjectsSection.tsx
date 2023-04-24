@@ -1,3 +1,12 @@
+"use client";
+
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+
 import {
   AstroIcon,
   ExpressIcon,
@@ -42,7 +51,18 @@ function ProjectsSection() {
                 eficiencia del flujo de trabajo.
               </p>
               <div className="flex items-center gap-4 mt-auto">
-                <NextIcon className="w-6 h-6" />
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a href="#">
+                        <NextIcon className="w-6 h-6" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Nextjs 13</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
                 <TailwindIcon className="w-6 h-6" />
                 <RadixIcon className="w-6 h-6" />
                 <NestjsIcon className="w-6 h-6 text-white" />
