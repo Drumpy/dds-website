@@ -38,20 +38,19 @@ function ProjectsSection() {
             <div className="flex flex-col h-full p-12">
               <div className="inline-flex items-center gap-2 mb-4">
                 <h3 className="text-2xl font-normal">StockNow</h3>
-                <a href="#">
+                <a href="#" aria-label="StockNow website">
                   <ExternalIcon className="w-4 h-4 text-gray-300" />
                 </a>
               </div>
-              <p className="text-gray-300">
-                Solución completa para controlar el inventario y las ventas,
-                permitiendo crear productos y categorías, gestionar ventas,
-                clientes y vendedores en una interfaz intuitiva e interactiva.
+              <p className="mb-1 text-gray-300">
+                Complete solution to control inventory and sales, allowing you
+                to create products and categories, manage sales, customers and
+                vendors in an intuitive and interactive interface.
               </p>
               <p className="text-gray-300">
-                Ofrece un control total del inventario en tiempo real para
-                asegurar que siempre sepa cuánto tiene disponible para la venta,
-                ayudando a simplificar el proceso de seguimiento y optimizar la
-                eficiencia del flujo de trabajo.
+                It offers full real-time inventory control to ensure that you
+                always know how much is available for sale, helping to simplify
+                the tracking process and optimize workflow efficiency.
               </p>
               <div className="flex items-center gap-4 mt-auto">
                 <TooltipProvider>
@@ -162,7 +161,7 @@ function ProjectsSection() {
           <div className="flex-1 overflow-hidden transition-all duration-200 bg-blue-900 group opacity-80 hover:opacity-100">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="./images/stocknow.png"
+              src="./images/stocknow.webp"
               className="object-contain w-full transition-all duration-200 group-hover:scale-110 drop-shadow-2xl"
               alt="StockNow Project Screenshot"
             />
@@ -177,14 +176,15 @@ function ProjectsSection() {
               <div className="inline-flex items-center gap-2 mb-4">
                 <h3 className="text-2xl font-normal">Efecto Diálogo</h3>
               </div>
+              <p className="mb-1 text-gray-300">
+                Web project that showcases the thesis work carried out by
+                Communication degree students from the University of Montevideo.
+              </p>
               <p className="text-gray-300">
-                Proyecto web que exhibe el trabajo de tesis realizado por
-                estudiantes de la Licenciatura en Comunicación, pertenecientes a
-                la Universidad de Montevideo. Nos enfocamos en contar y
-                transmitir cada historia a medida que el usuario consume el
-                contenido. El reto fue implementar las animaciones deseadas
-                utilizando la librería GSAP, lo que añadió una capa adicional de
-                interactividad al sitio.
+                We focus on telling and conveying each story as the user
+                consumes the content. The challenge was to implement desired
+                animations using the GSAP library, which added an additional
+                layer of interactivity to the site.
               </p>
               <div className="flex items-center gap-4 mt-auto">
                 <TooltipProvider>
@@ -261,7 +261,7 @@ function ProjectsSection() {
           <div className="flex-1 overflow-hidden transition-all duration-200 bg-zinc-900 group opacity-80 hover:opacity-100">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="./images/efectodialogo.png"
+              src="./images/efectodialogo.webp"
               className="object-contain w-full transition-all duration-200 group-hover:scale-110"
               alt="StockNow Project Screenshot"
             />
@@ -391,7 +391,7 @@ function ProjectsSection() {
           <div className="flex-1 overflow-hidden transition-all duration-200 bg-emerald-900 group opacity-80 hover:opacity-100">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="./images/agenda-clinica.png"
+              src="./images/agenda-clinica.webp"
               className="object-contain w-full transition-all duration-200 group-hover:scale-110"
               alt="StockNow Project Screenshot"
             />
