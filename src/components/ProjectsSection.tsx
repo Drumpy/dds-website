@@ -9,9 +9,11 @@ import {
 
 import {
   AstroIcon,
+  DigitalOceanIcon,
   ExpressIcon,
   ExternalIcon,
   MdxIcon,
+  MongoDBIcon,
   NestjsIcon,
   NextIcon,
   RadixIcon,
@@ -29,6 +31,7 @@ function ProjectsSection() {
           Projects
         </h2>
       </div>
+
       <article className="bg-gradient-to-r from-[#242428] via-transparent to-[#242428] py-[1px]">
         <div className="min-h-72 bg-[#101012] flex">
           <div className="flex-1">
@@ -54,19 +57,105 @@ function ProjectsSection() {
                 <TooltipProvider>
                   <Tooltip>
                     <TooltipTrigger asChild>
-                      <a href="#">
+                      <a
+                        href="https://nextjs.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Next.js 13 link"
+                      >
                         <NextIcon className="w-6 h-6" />
                       </a>
                     </TooltipTrigger>
                     <TooltipContent>
-                      <p>Nextjs 13</p>
+                      <p>Next.js 13</p>
                     </TooltipContent>
                   </Tooltip>
                 </TooltipProvider>
-                <TailwindIcon className="w-6 h-6" />
-                <RadixIcon className="w-6 h-6" />
-                <NestjsIcon className="w-6 h-6 text-white" />
-                <VercelIcon className="w-6 h-6 text-white" />
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://tailwindcss.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Tailwind CSS link"
+                      >
+                        <TailwindIcon className="w-6 h-6" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Tailwind CSS</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://www.radix-ui.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Radiux UI link"
+                      >
+                        <RadixIcon className="w-6 h-6" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Radix UI</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://nestjs.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="NestJS link"
+                      >
+                        <NestjsIcon className="w-6 h-6 text-white" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>NestJS</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://www.mongodb.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="MongoDB link"
+                      >
+                        <MongoDBIcon className="w-6 h-6" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>MongoDB</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://vercel.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Vercel link"
+                      >
+                        <VercelIcon className="w-6 h-6 text-white" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Vercel</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
             </div>
           </div>
@@ -80,6 +169,7 @@ function ProjectsSection() {
           </div>
         </div>
       </article>
+
       <article className="bg-gradient-to-r from-[#242428] via-transparent to-[#242428] py-[1px]">
         <div className="min-h-72 bg-[#101012] flex flex-row-reverse">
           <div className="flex-1">
@@ -97,10 +187,74 @@ function ProjectsSection() {
                 interactividad al sitio.
               </p>
               <div className="flex items-center gap-4 mt-auto">
-                <AstroIcon className="w-6 h-6" />
-                <TailwindIcon className="w-6 h-6" />
-                <MdxIcon className="w-8 h-8" />
-                <span>GSAP</span>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://astro.build/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Astro link"
+                      >
+                        <AstroIcon className="w-6 h-6" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Astro</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://tailwindcss.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Tailwind CSS link"
+                      >
+                        <TailwindIcon className="w-6 h-6" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Tailwind CSS</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://mdxjs.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="MDX link"
+                      >
+                        <MdxIcon className="w-8 h-8" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>MDX</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://greensock.com/gsap/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GreenSock GSAP link"
+                      >
+                        GSAP
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>GreenSock GSAP</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
             </div>
           </div>
@@ -114,6 +268,7 @@ function ProjectsSection() {
           </div>
         </div>
       </article>
+
       <article className="bg-gradient-to-r from-[#242428] via-transparent to-[#242428] py-[1px]">
         <div className="min-h-72 bg-[#101012] flex">
           <div className="flex-1">
@@ -128,10 +283,108 @@ function ProjectsSection() {
                 molestias atque velit dolorem expedita?
               </p>
               <div className="flex items-center gap-4 mt-auto">
-                <ReactIcon className="w-6 h-6" />
-                <ReduxIcon className="w-6 h-6" />
-                <TailwindIcon className="w-6 h-6" />
-                <ExpressIcon className="w-6 h-6" />
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://react.dev/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="React link"
+                      >
+                        <ReactIcon className="w-6 h-6" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>React</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://redux.js.org/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Redux link"
+                      >
+                        <ReduxIcon className="w-6 h-6" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Redux</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://tailwindcss.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Tailwind CSS link"
+                      >
+                        <TailwindIcon className="w-6 h-6" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Tailwind CSS</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://expressjs.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Express link"
+                      >
+                        <ExpressIcon className="w-6 h-6" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Express</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://www.mongodb.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="MongoDB link"
+                      >
+                        <MongoDBIcon className="w-6 h-6" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>MongoDB</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://www.digitalocean.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="DigitalOcean link"
+                      >
+                        <DigitalOceanIcon className="w-6 h-6" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>DigitalOcean</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
             </div>
           </div>
