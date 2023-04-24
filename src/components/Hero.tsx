@@ -22,16 +22,16 @@ function Hero() {
         transition={{ duration: 0.3 }}
         className="relative grid place-content-center place-items-center min-h-[85vh] sm:min-h-[80vh] bg-hero-placeholder bg-center bg-no-repeat bg-cover z-0 text-center"
       >
-        <span className="inline-flex items-center gap-2 px-3 py-1 mb-6 text-xs font-normal tracking-wide text-white border shadow-sm bg-white/10 backdrop-blur-lg border-white/5 rounded-3xl">
+        <span className="inline-flex items-center gap-2 px-3 py-1 mb-6 text-sm font-normal tracking-wide text-white border bg-white/5 backdrop-blur-lg border-white/10 rounded-3xl">
           Working from Uruguay <UruguayFlagIcon />
         </span>
         <motion.div initial="initial" animate="animate">
-          <h1 className="mb-8 text-5xl font-bold leading-snug sm:text-7xl font-wide drop-shadow-md">
+          <h1 className="mb-6 text-5xl font-bold sm:text-7xl font-wide drop-shadow-md">
             <AnimatedHeroText title="Diego Do Santos" />
           </h1>
           <motion.p
             variants={riseWithFade}
-            className="text-lg sm:text-2xl font-medium tracking-[6px] text-blue-100/80 drop-shadow uppercase max-w-[300px] sm:max-w-none mx-auto"
+            className="text-lg sm:text-xl font-medium tracking-[6px] text-blue-100/60 drop-shadow uppercase max-w-[300px] sm:max-w-none mx-auto"
           >
             Creative Developer
           </motion.p>
