@@ -5,6 +5,14 @@ const nextConfig = {
   },
   output: "export",
   distDir: "dist",
+  async rewrites() {
+    return [
+      {
+        source: "/r/:path*",
+        destination: "https://r.acme.com/:path*",
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
