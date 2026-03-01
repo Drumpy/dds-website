@@ -38,7 +38,7 @@ function ProjectsSection() {
         <div className="min-h-72 bg-[#101012] flex flex-col-reverse lg:flex-row">
           <div className="flex-1">
             <div className="flex flex-col h-full p-12">
-              <div className="inline-flex items-center justify-between gap-2 mb-4">
+              <div className="flex flex-col sm:inline-flex flex-wrap items-start gap-4 justify-between sm:gap-2 mb-4">
                 <a
                   className="inline-flex items-center gap-2 hover:text-gray-400 transition-colors duration-200"
                   href="https://www.hlestudio.com/"
@@ -130,7 +130,7 @@ function ProjectsSection() {
               </div>
             </div>
           </div>
-          <div className="flex items-center flex-1 overflow-hidden transition-all duration-200 bg-linear-to-b from-teal-900 to-transparent group opacity-80 hover:opacity-100">
+          <div className="flex items-center flex-1 overflow-hidden transition-all duration-200 group opacity-80 hover:opacity-100">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="./images/hlestudio.webp"
@@ -145,7 +145,7 @@ function ProjectsSection() {
         <div className="min-h-72 bg-[#101012] flex flex-col-reverse lg:flex-row-reverse">
           <div className="flex-1">
             <div className="flex flex-col h-full p-12">
-              <div className="inline-flex items-center justify-between gap-2 mb-4">
+              <div className="flex flex-col sm:inline-flex flex-wrap items-start gap-4 justify-between sm:gap-2 mb-4">
                 <a
                   className="inline-flex items-center gap-2 hover:text-gray-400 transition-colors duration-200"
                   href="https://co-cami.vercel.app/"
@@ -160,11 +160,11 @@ function ProjectsSection() {
                   Wedding Invitation App
                 </span>
               </div>
-              <p className="mb-2 text-gray-500">
+              <p className="mb-2 text-gray-400">
                 A modern digital wedding invitation that combines an elegant
                 presentation with a powerful guest management system.
               </p>
-              <p className="text-gray-500">
+              <p className="text-gray-400">
                 The platform allows couples to share event details, generate
                 unique invitation codes, manage RSVPs, and control guest access
                 in a seamless way.
@@ -244,7 +244,7 @@ function ProjectsSection() {
           <div className="flex items-center flex-1 overflow-hidden transition-all duration-200 bg-linear-to-b from-stone-700 to-transparent group opacity-60 hover:opacity-80">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="./images/coycami.webp"
+              src="./images/wedding.webp"
               className="object-contain w-full transition-all duration-200 group-hover:scale-110 drop-shadow-2xl"
               alt="Co & Cami - Wedding Website Screenshot"
             />
@@ -389,10 +389,10 @@ function ProjectsSection() {
       </article> */}
 
       <article className="bg-linear-to-r from-[#242428] via-transparent to-[#242428] py-px">
-        <div className="min-h-72 bg-[#101012] flex flex-col lg:flex-row">
+        <div className="min-h-72 bg-[#101012] flex flex-col-reverse lg:flex-row">
           <div className="flex-1">
             <div className="flex flex-col h-full p-12">
-              <div className="inline-flex items-center justify-between gap-2 mb-4">
+              <div className="flex flex-col sm:inline-flex flex-wrap items-start gap-4 justify-between sm:gap-2 mb-4">
                 <a
                   className="inline-flex items-center gap-2 hover:text-gray-400 transition-colors duration-200"
                   href="https://www.efectodialogo.uy/"
@@ -504,7 +504,7 @@ function ProjectsSection() {
         <div className="min-h-72 bg-[#101012] flex flex-col-reverse lg:flex-row-reverse">
           <div className="flex-1">
             <div className="flex flex-col h-full p-12">
-              <div className="inline-flex items-center justify-between gap-2 mb-4">
+              <div className="flex flex-col sm:inline-flex flex-wrap items-start gap-4 justify-between sm:gap-2 mb-4">
                 <a
                   className="inline-flex items-center gap-2 hover:text-gray-400 transition-colors duration-200"
                   href="https://clinica-florida.vercel.app/"
@@ -519,7 +519,7 @@ function ProjectsSection() {
                   Physiotherapy Clinic App
                 </span>
               </div>
-              <p className="text-gray-300">
+              <p className="text-gray-400">
                 Application designed for a physiotherapy clinic, providing a
                 simple and intuitive way to manage patients through a
                 calendar-based system.
@@ -633,7 +633,7 @@ function ProjectsSection() {
           <div className="flex items-center flex-1 overflow-hidden transition-all duration-200 bg-linear-to-b from-teal-700 to-transparent group opacity-80 hover:opacity-100">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="./images/clinica-florida.webp"
+              src="./images/clinicaflorida.webp"
               className="object-contain w-full transition-all duration-200 group-hover:scale-110"
               alt="Clínica Florida Project Screenshot"
             />
