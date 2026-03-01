@@ -14,7 +14,7 @@ function AnimatedHeroText({ title }: AnimatedHeroTextProps) {
         <div key={index} className="inline-block">
           <motion.span
             variants={wordAnimation}
-            className="inline-block bg-clip-text text-transparent bg-gradient-to-b from-white/90 from-5% to-blue-100/60"
+            className="inline-block bg-clip-text text-transparent bg-linear-to-b from-white/90 from-5% to-blue-100/60"
           >
             {word + "\u00A0"}
           </motion.span>
