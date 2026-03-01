@@ -48,7 +48,7 @@ function Hero() {
         <ScrollDownIcon className="h-6 w-6 absolute animate-bounce bottom-16 duration-1000 text-white/20" />
         <canvas
           ref={canvasRef}
-          className="absolute inset-0 -z-20 animate-pulse"
+          className="absolute inset-0 -z-20"
           id="gradient-canvas"
           data-transition-in
         />
