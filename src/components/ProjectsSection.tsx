@@ -19,20 +19,240 @@ import {
   RadixIcon,
   ReactIcon,
   ReduxIcon,
+  SupabaseIcon,
   TailwindIcon,
+  TinaIcon,
   VercelIcon,
 } from "@/components/Icons";
 
 function ProjectsSection() {
   return (
-    <section className="bg-gradient-to-r from-[#242428] via-transparent to-[#242428] pt-[1px] text-white">
+    <section className="bg-linear-to-r from-[#242428] via-transparent to-[#242428] pt-px text-white">
       <div className="h-72 bg-[#101012] px-12 flex items-center">
-        <h2 className="text-5xl font-medium font-wide bg-clip-text text-transparent bg-gradient-to-b from-white/90 from-5% to-blue-100/60">
+        <h2 className="text-5xl font-medium font-wide bg-clip-text text-transparent bg-linear-to-b from-white/90 from-5% to-blue-100/60">
           Projects
         </h2>
       </div>
 
-      <article className="bg-gradient-to-r from-[#242428] via-transparent to-[#242428] py-[1px]">
+      <article className="bg-linear-to-r from-[#242428] via-transparent to-[#242428] py-px">
+        <div className="min-h-72 bg-[#101012] flex flex-col-reverse lg:flex-row">
+          <div className="flex-1">
+            <div className="flex flex-col h-full p-12">
+              <div className="inline-flex items-center justify-between gap-2 mb-4">
+                <a
+                  className="inline-flex items-center gap-2 hover:text-gray-400 transition-colors duration-200"
+                  href="https://www.hlestudio.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="HL Estudio website"
+                >
+                  <h3 className="text-2xl font-normal">HL Estudio</h3>
+                  <ExternalIcon className="w-4 h-4 text-gray-500" />
+                </a>
+                <span className="rounded-full bg-teal-800 px-2 py-1 text-xs">
+                  Architecture Studio Website
+                </span>
+              </div>
+              <p className="mb-2 text-gray-400">
+                A modern website for an architectural studio aimed at presenting
+                their work, strengthening their brand presence, and enabling
+                potential clients to easily get in touch for new projects.
+              </p>
+              <div className="flex items-center gap-4 pt-6 mt-auto">
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://astro.build/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Astro link"
+                      >
+                        <AstroIcon className="w-6 h-6" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Astro</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://react.dev/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="React link"
+                      >
+                        <ReactIcon className="w-6 h-6" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>React</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://tailwindcss.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Tailwind CSS link"
+                      >
+                        <TailwindIcon className="w-6 h-6" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Tailwind CSS</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://tina.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Tina CMS link"
+                      >
+                        <TinaIcon className="w-6 h-6" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Tina CMS</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </div>
+            </div>
+          </div>
+          <div className="flex items-center flex-1 overflow-hidden transition-all duration-200 bg-linear-to-b from-teal-900 to-transparent group opacity-80 hover:opacity-100">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="./images/hlestudio.webp"
+              className="object-contain w-full transition-all duration-200 group-hover:scale-110 drop-shadow-2xl"
+              alt="HL Estudio Project Screenshot"
+            />
+          </div>
+        </div>
+      </article>
+
+      <article className="bg-linear-to-r from-[#242428] via-transparent to-[#242428] py-px">
+        <div className="min-h-72 bg-[#101012] flex flex-col-reverse lg:flex-row-reverse">
+          <div className="flex-1">
+            <div className="flex flex-col h-full p-12">
+              <div className="inline-flex items-center justify-between gap-2 mb-4">
+                <a
+                  className="inline-flex items-center gap-2 hover:text-gray-400 transition-colors duration-200"
+                  href="https://co-cami.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Co & Cami - Wedding Website"
+                >
+                  <h3 className="text-2xl font-normal">Co & Cami</h3>
+                  <ExternalIcon className="w-4 h-4 text-gray-500" />
+                </a>
+                <span className="rounded-full bg-stone-800 px-2 py-1 text-xs">
+                  Wedding Invitation App
+                </span>
+              </div>
+              <p className="mb-2 text-gray-500">
+                A modern digital wedding invitation that combines an elegant
+                presentation with a powerful guest management system.
+              </p>
+              <p className="text-gray-500">
+                The platform allows couples to share event details, generate
+                unique invitation codes, manage RSVPs, and control guest access
+                in a seamless way.
+              </p>
+              <div className="flex items-center gap-4 pt-6 mt-auto">
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://astro.build/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Astro link"
+                      >
+                        <AstroIcon className="w-6 h-6" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Astro</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://react.dev/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="React link"
+                      >
+                        <ReactIcon className="w-6 h-6" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>React</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://tailwindcss.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Tailwind CSS link"
+                      >
+                        <TailwindIcon className="w-6 h-6" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Tailwind CSS</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href="https://supabase.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Supabase link"
+                      >
+                        <SupabaseIcon className="w-6 h-6" />
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>Supabase</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </div>
+            </div>
+          </div>
+          <div className="flex items-center flex-1 overflow-hidden transition-all duration-200 bg-linear-to-b from-stone-700 to-transparent group opacity-60 hover:opacity-80">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="./images/coycami.webp"
+              className="object-contain w-full transition-all duration-200 group-hover:scale-110 drop-shadow-2xl"
+              alt="Co & Cami - Wedding Website Screenshot"
+            />
+          </div>
+        </div>
+      </article>
+
+      {/* <article className="bg-linear-to-r from-[#242428] via-transparent to-[#242428] py-px">
         <div className="min-h-72 bg-[#101012] flex flex-col-reverse lg:flex-row">
           <div className="flex-1">
             <div className="flex flex-col h-full p-12">
@@ -158,8 +378,7 @@ function ProjectsSection() {
               </div>
             </div>
           </div>
-          <div className="flex items-center flex-1 overflow-hidden transition-all duration-200 bg-blue-900 group opacity-80 hover:opacity-100">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
+          <div className="flex items-center flex-1 overflow-hidden transition-all duration-200 bg-linear-to-b from-blue-900 to-transparent group opacity-80 hover:opacity-100">
             <img
               src="./images/stocknow.webp"
               className="object-contain w-full transition-all duration-200 group-hover:scale-110 drop-shadow-2xl"
@@ -167,20 +386,32 @@ function ProjectsSection() {
             />
           </div>
         </div>
-      </article>
+      </article> */}
 
-      <article className="bg-gradient-to-r from-[#242428] via-transparent to-[#242428] py-[1px]">
-        <div className="min-h-72 bg-[#101012] flex flex-col-reverse lg:flex-row-reverse">
+      <article className="bg-linear-to-r from-[#242428] via-transparent to-[#242428] py-px">
+        <div className="min-h-72 bg-[#101012] flex flex-col lg:flex-row">
           <div className="flex-1">
             <div className="flex flex-col h-full p-12">
-              <div className="inline-flex items-center gap-2 mb-4">
-                <h3 className="text-2xl font-normal">Efecto Diálogo</h3>
+              <div className="inline-flex items-center justify-between gap-2 mb-4">
+                <a
+                  className="inline-flex items-center gap-2 hover:text-gray-400 transition-colors duration-200"
+                  href="https://www.efectodialogo.uy/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Efecto Diálogo website"
+                >
+                  <h3 className="text-2xl font-normal">Efecto Diálogo</h3>
+                  <ExternalIcon className="w-4 h-4 text-gray-500" />
+                </a>
+                <span className="rounded-full bg-slate-800 px-2 py-1 text-xs">
+                  Communication Degree Thesis Project
+                </span>
               </div>
-              <p className="mb-2 text-gray-300">
+              <p className="mb-2 text-gray-400">
                 Web project that showcases the thesis work carried out by
                 Communication degree students from the University of Montevideo.
               </p>
-              <p className="text-gray-300">
+              <p className="text-gray-400">
                 We focus on telling and conveying each story as the user
                 consumes the content. The challenge was to implement desired
                 animations using the GSAP library, which added an additional
@@ -258,29 +489,40 @@ function ProjectsSection() {
               </div>
             </div>
           </div>
-          <div className="flex items-center flex-1 overflow-hidden transition-all duration-200 bg-zinc-900 group opacity-80 hover:opacity-100">
+          <div className="flex items-center flex-1 overflow-hidden transition-all duration-200 bg-linear-to-b from-slate-700 to-transparent group opacity-80 hover:opacity-100">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="./images/efectodialogo.webp"
               className="object-contain w-full transition-all duration-200 group-hover:scale-110"
-              alt="StockNow Project Screenshot"
+              alt="Efecto Diálogo Project Screenshot"
             />
           </div>
         </div>
       </article>
 
-      <article className="bg-gradient-to-r from-[#242428] via-transparent to-[#242428] py-[1px]">
-        <div className="min-h-72 bg-[#101012] flex flex-col-reverse lg:flex-row">
+      <article className="bg-linear-to-r from-[#242428] via-transparent to-[#242428] py-px">
+        <div className="min-h-72 bg-[#101012] flex flex-col-reverse lg:flex-row-reverse">
           <div className="flex-1">
             <div className="flex flex-col h-full p-12">
-              <div className="inline-flex items-center gap-2 mb-4">
-                <h3 className="text-2xl font-normal">Agenda de Pacientes</h3>
+              <div className="inline-flex items-center justify-between gap-2 mb-4">
+                <a
+                  className="inline-flex items-center gap-2 hover:text-gray-400 transition-colors duration-200"
+                  href="https://clinica-florida.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Clínica Florida website"
+                >
+                  <h3 className="text-2xl font-normal">Clínica Florida</h3>
+                  <ExternalIcon className="w-4 h-4 text-gray-500" />
+                </a>
+                <span className="rounded-full bg-teal-800 px-2 py-1 text-xs">
+                  Physiotherapy Clinic App
+                </span>
               </div>
               <p className="text-gray-300">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Corporis amet dignissimos aut aspernatur tempora ratione a
-                nostrum minus qui eaque asperiores blanditiis ad maxime labore,
-                molestias atque velit dolorem expedita?
+                Application designed for a physiotherapy clinic, providing a
+                simple and intuitive way to manage patients through a
+                calendar-based system.
               </p>
               <div className="flex items-center gap-4 pt-6 mt-auto">
                 <TooltipProvider>
@@ -388,12 +630,12 @@ function ProjectsSection() {
               </div>
             </div>
           </div>
-          <div className="flex items-center flex-1 overflow-hidden transition-all duration-200 bg-emerald-900 group opacity-80 hover:opacity-100">
+          <div className="flex items-center flex-1 overflow-hidden transition-all duration-200 bg-linear-to-b from-teal-700 to-transparent group opacity-80 hover:opacity-100">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="./images/agenda-clinica.webp"
+              src="./images/clinica-florida.webp"
               className="object-contain w-full transition-all duration-200 group-hover:scale-110"
-              alt="StockNow Project Screenshot"
+              alt="Clínica Florida Project Screenshot"
             />
           </div>
         </div>

@@ -6,17 +6,20 @@ export function ExternalIcon({ className }: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      fill="none"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
-      strokeWidth={1.5}
+      fill="none"
       stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className={className}
     >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-      />
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+      <path d="M11 13l9 -9" />
+      <path d="M15 4h5v5" />
     </svg>
   );
 }
@@ -70,7 +73,7 @@ export function RadixIcon({ className }: IconProps) {
       width={24}
       height={24}
       viewBox="0 0 24 24"
-      stroke-width={2}
+      strokeWidth={2}
       stroke="currentColor"
       fill="none"
       strokeLinecap="round"
@@ -197,7 +200,7 @@ export function DigitalOceanIcon({ className }: IconProps) {
   );
 }
 
-export function GithubIcon({ className }: IconProps) {
+export function SupabaseIcon({ className }: IconProps) {
   return (
     <svg
       role="img"
@@ -206,7 +209,41 @@ export function GithubIcon({ className }: IconProps) {
       fill="currentColor"
       className={className}
     >
-      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+      <path d="M11.9 1.036c-.015-.986-1.26-1.41-1.874-.637L.764 12.05C-.33 13.427.65 15.455 2.409 15.455h9.579l.113 7.51c.014.985 1.259 1.408 1.873.636l9.262-11.653c1.093-1.375.113-3.403-1.645-3.403h-9.642z" />
+    </svg>
+  );
+}
+
+export function TinaIcon({ className }: IconProps) {
+  return (
+    <svg
+      role="img"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
+      className={className}
+    >
+      <path d="M 14.46 10.662 C 15.626 9.697 16.143 3.996 16.648 1.947 C 17.153 -0.103 19.241 0.001 19.241 0.001 C 19.241 0.001 18.699 0.945 18.92 1.649 C 19.141 2.353 20.656 2.982 20.656 2.982 L 20.329 3.843 C 20.329 3.843 19.647 3.756 19.241 4.568 C 18.835 5.38 19.502 13.421 19.502 13.421 C 19.502 13.421 17.062 18.234 17.062 20.266 C 17.062 22.298 18.024 24 18.024 24 L 16.674 24 C 16.674 24 14.694 21.644 14.288 20.467 C 13.882 19.289 14.045 18.112 14.045 18.112 C 14.045 18.112 11.893 17.99 9.984 18.112 C 8.076 18.234 6.803 19.874 6.574 20.792 C 6.344 21.709 6.249 24 6.249 24 L 5.182 24 C 4.532 21.996 4.016 21.278 4.296 20.266 C 5.072 17.462 4.919 15.872 4.74 15.164 C 4.56 14.456 3.345 13.838 3.345 13.838 C 3.94 12.625 4.548 12.042 7.162 11.981 C 9.775 11.921 13.294 11.627 14.46 10.662 Z M 9.277 18.871 C 9.277 18.871 9.413 22.579 10.669 24 L 9.413 24 C 7.949 22.7 7.673 20.148 7.673 20.148 C 7.754 19.824 8.638 19.079 9.277 18.871 Z" />
+    </svg>
+  );
+}
+
+export function GithubIcon({ className }: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
     </svg>
   );
 }
@@ -214,13 +251,44 @@ export function GithubIcon({ className }: IconProps) {
 export function LinkedinIcon({ className }: IconProps) {
   return (
     <svg
-      role="img"
-      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      fill="currentColor"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      stroke-linecap="round"
+      strokeLinejoin="round"
       className={className}
     >
-      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M8 11v5" />
+      <path d="M8 8v.01" />
+      <path d="M12 16v-5" />
+      <path d="M16 16v-3a2 2 0 1 0 -4 0" />
+      <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10" />
+    </svg>
+  );
+}
+
+export function EmailIcon({ className }: IconProps) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+      <path d="M3 7l9 6l9 -6" />
     </svg>
   );
 }
@@ -228,21 +296,20 @@ export function LinkedinIcon({ className }: IconProps) {
 export function ScrollDownIcon({ className }: IconProps) {
   return (
     <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className={className}
     >
-      <path
-        d="M12 5C11.4477 5 11 5.44772 11 6V10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10V6C13 5.44772 12.5523 5 12 5Z"
-        fill="currentColor"
-      />
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M4 8C4 3.58172 7.58172 0 12 0C16.4183 0 20 3.58172 20 8V16C20 20.4183 16.4183 24 12 24C7.58172 24 4 20.4183 4 16V8ZM18 8V16C18 19.3137 15.3137 22 12 22C8.68629 22 6 19.3137 6 16V8C6 4.68629 8.68629 2 12 2C15.3137 2 18 4.68629 18 8Z"
-        fill="currentColor"
-      />
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M7 7l5 5l5 -5" />
+      <path d="M7 13l5 5l5 -5" />
     </svg>
   );
 }

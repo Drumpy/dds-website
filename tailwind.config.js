@@ -1,4 +1,12 @@
-const { fontFamily } = require("tailwindcss/defaultTheme");
+const defaultSans = [
+  "ui-sans-serif",
+  "system-ui",
+  "sans-serif",
+  '"Apple Color Emoji"',
+  '"Segoe UI Emoji"',
+  '"Segoe UI Symbol"',
+  '"Noto Color Emoji"',
+];
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -53,7 +61,7 @@ module.exports = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        sans: ["var(--font-sans)", ...defaultSans],
       },
       keyframes: {
         "accordion-down": {
