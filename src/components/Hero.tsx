@@ -34,12 +34,12 @@ function Hero() {
           Working from Uruguay <UruguayFlagIcon />
         </span>
         <motion.div initial="initial" animate="animate">
-          <h1 className="mb-6 text-5xl font-bold sm:text-7xl font-wide drop-shadow-md">
+          <h1 className="mb-6 text-4xl font-bold sm:text-7xl font-wide drop-shadow-md">
             <AnimatedHeroText title="Diego Do Santos" />
           </h1>
           <motion.p
             variants={riseWithFade}
-            className="text-lg sm:text-lg font-medium tracking-[4px] text-blue-100/60 drop-shadow uppercase max-w-[300px] sm:max-w-none mx-auto"
+            className="text-sm sm:text-lg font-medium tracking-[4px] text-blue-100/60 drop-shadow uppercase max-w-[300px] sm:max-w-none mx-auto"
           >
             Creative Developer
           </motion.p>

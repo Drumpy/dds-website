@@ -14,22 +14,18 @@ import {
   ExternalIcon,
   MdxIcon,
   MongoDBIcon,
-  NestjsIcon,
-  NextIcon,
-  RadixIcon,
   ReactIcon,
   ReduxIcon,
   SupabaseIcon,
   TailwindIcon,
   TinaIcon,
-  VercelIcon,
 } from "@/components/Icons";
 
 function ProjectsSection() {
   return (
     <section className="bg-linear-to-r from-[#242428] via-transparent to-[#242428] pt-px text-white">
       <div className="h-72 bg-[#101012] px-12 flex items-center">
-        <h2 className="text-5xl font-medium font-wide bg-clip-text text-transparent bg-linear-to-b from-white/90 from-5% to-blue-100/60">
+        <h2 className="text-4xl sm:text-5xl font-medium font-wide bg-clip-text text-transparent bg-linear-to-b from-white/90 from-5% to-blue-100/60">
           Projects
         </h2>
       </div>
