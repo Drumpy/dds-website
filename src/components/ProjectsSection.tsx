@@ -38,7 +38,7 @@ function ProjectsSection() {
         <div className="min-h-72 bg-[#101012] flex flex-col-reverse lg:flex-row">
           <div className="flex-1">
             <div className="flex flex-col h-full p-12">
-              <div className="flex flex-col sm:inline-flex flex-wrap items-start gap-4 justify-between sm:gap-2 mb-4">
+              <div className="flex flex-col lg:flex-row items-start lg:items-center gap-4 justify-between sm:gap-2 mb-4 lg:mb-8">
                 <a
                   className="inline-flex items-center gap-2 hover:text-gray-400 transition-colors duration-200"
                   href="https://www.hlestudio.com/"
@@ -145,7 +145,7 @@ function ProjectsSection() {
         <div className="min-h-72 bg-[#101012] flex flex-col-reverse lg:flex-row-reverse">
           <div className="flex-1">
             <div className="flex flex-col h-full p-12">
-              <div className="flex flex-col sm:inline-flex flex-wrap items-start gap-4 justify-between sm:gap-2 mb-4">
+              <div className="flex flex-col lg:flex-row items-start lg:items-center gap-4 justify-between sm:gap-2 mb-4 lg:mb-8">
                 <a
                   className="inline-flex items-center gap-2 hover:text-gray-400 transition-colors duration-200"
                   href="https://co-cami.vercel.app/"
@@ -392,7 +392,7 @@ function ProjectsSection() {
         <div className="min-h-72 bg-[#101012] flex flex-col-reverse lg:flex-row">
           <div className="flex-1">
             <div className="flex flex-col h-full p-12">
-              <div className="flex flex-col sm:inline-flex flex-wrap items-start gap-4 justify-between sm:gap-2 mb-4">
+              <div className="flex flex-col lg:flex-row items-start lg:items-center gap-4 justify-between sm:gap-2 mb-4 lg:mb-8">
                 <a
                   className="inline-flex items-center gap-2 hover:text-gray-400 transition-colors duration-200"
                   href="https://www.efectodialogo.uy/"
@@ -504,7 +504,7 @@ function ProjectsSection() {
         <div className="min-h-72 bg-[#101012] flex flex-col-reverse lg:flex-row-reverse">
           <div className="flex-1">
             <div className="flex flex-col h-full p-12">
-              <div className="flex flex-col sm:inline-flex flex-wrap items-start gap-4 justify-between sm:gap-2 mb-4">
+              <div className="flex flex-col lg:flex-row items-start lg:items-center gap-4 justify-between sm:gap-2 mb-4 lg:mb-8">
                 <a
                   className="inline-flex items-center gap-2 hover:text-gray-400 transition-colors duration-200"
                   href="https://clinica-florida.vercel.app/"
