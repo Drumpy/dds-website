@@ -19,6 +19,16 @@ export default function RootLayout({
     <html lang="es" className={`antialiased ${hubot.className}`}>
       <head>
         <script
+          id="counterscale-config"
+          dangerouslySetInnerHTML={{
+            __html: `(function () {
+  window.counterscale = {
+    q: [["set", "siteId", "hl-estudio"], ["trackPageview"]],
+  };
+})();`,
+          }}
+        />
+        <script
           id="counterscale-script"
           src="https://counterscale.drumpy.workers.dev/tracker.js"
           defer
