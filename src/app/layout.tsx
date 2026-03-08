@@ -23,7 +23,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `(function () {
   window.counterscale = {
-    q: [["set", "siteId", "hl-estudio"], ["trackPageview"]],
+    q: [["set", "siteId", "dds-website"], ["trackPageview"]],
   };
 })();`,
           }}
