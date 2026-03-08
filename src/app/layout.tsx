@@ -17,6 +17,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`antialiased ${hubot.className}`}>
+      <head>
+        <script
+          id="counterscale-script"
+          src="https://counterscale.drumpy.workers.dev/tracker.js"
+          defer
+        />
+      </head>
       <body className="bg-[#101012]">{children}</body>
     </html>
   );
