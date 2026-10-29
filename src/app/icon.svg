@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bg" x1="6" y1="0" x2="58" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3aa6ff" />
+      <stop offset="0.42" stop-color="#1e90ff" />
+      <stop offset="0.72" stop-color="#191970" />
+      <stop offset="1" stop-color="#00008b" />
+    </linearGradient>
+    <linearGradient id="crest" x1="0" y1="24" x2="0" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="0.55" stop-color="#ffffff" stop-opacity="0.16" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.05" />
+    </linearGradient>
+    <clipPath id="shape">
+      <rect width="64" height="64" rx="15" />
+    </clipPath>
+  </defs>
+
+  <rect width="64" height="64" rx="15" fill="url(#bg)" />
+
+  <g clip-path="url(#shape)">
+    <path
+      d="M-2 39c10-8 17-12 25-12 9 0 13 5 21 5 7 0 12-3 22-10v44H-2z"
+      fill="url(#crest)"
+    />
+    <path
+      d="M-2 48c9-7 16-10 24-10 9 0 14 4 22 4 7 0 12-2 22-8v32H-2z"
+      fill="#000080"
+      fill-opacity="0.32"
+    />
+  </g>
+</svg>

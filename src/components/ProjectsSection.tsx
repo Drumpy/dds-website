@@ -13,17 +13,21 @@ import {
   AstroIcon,
   CloudflareIcon,
   DigitalOceanIcon,
+  DockerIcon,
   ExpressIcon,
   ExternalIcon,
   MdxIcon,
   MongoDBIcon,
+  NestjsIcon,
   NextIcon,
   ReactIcon,
   ReduxIcon,
+  RenderIcon,
   SupabaseIcon,
   TailwindIcon,
   ThreejsIcon,
   TinaIcon,
+  VercelIcon,
   ViteIcon,
 } from "@/components/Icons";
 
@@ -65,11 +69,18 @@ const projects: Project[] = [
       { name: "Next.js", href: "https://nextjs.org/", Icon: NextIcon },
       { name: "React", href: "https://react.dev/", Icon: ReactIcon },
       {
+        name: "NestJS",
+        href: "https://nestjs.com/",
+        Icon: NestjsIcon,
+      },
+      {
         name: "Tailwind CSS",
         href: "https://tailwindcss.com/",
         Icon: TailwindIcon,
       },
       { name: "Supabase", href: "https://supabase.com/", Icon: SupabaseIcon },
+      { name: "AWS", href: "https://aws.amazon.com/" },
+      { name: "Render", href: "https://render.com/", Icon: RenderIcon },
     ],
   },
   {
@@ -93,6 +104,8 @@ const projects: Project[] = [
         href: "https://workers.cloudflare.com/",
         Icon: CloudflareIcon,
       },
+      { name: "Vercel", href: "https://vercel.com/", Icon: VercelIcon },
+      { name: "Docker", href: "https://www.docker.com/", Icon: DockerIcon },
     ],
   },
   {
@@ -243,7 +256,7 @@ function ProjectCard({ project }: { project: Project }) {
                 {paragraph}
               </p>
             ))}
-            <div className="flex items-center gap-4 pt-6 mt-auto">
+            <div className="flex flex-wrap items-center gap-4 pt-6 mt-auto">
               {tech.map((techItem) => (
                 <TechLink key={techItem.name} tech={techItem} />
               ))}
