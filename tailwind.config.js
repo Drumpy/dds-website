@@ -62,6 +62,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...defaultSans],
+        cormorant: ["var(--font-cormorant)", "Georgia", "serif"],
       },
       keyframes: {
         "accordion-down": {
@@ -72,6 +73,10 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+      },
+      transitionTimingFunction: {
+        "out-strong": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "in-out-strong": "cubic-bezier(0.77, 0, 0.175, 1)",
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",

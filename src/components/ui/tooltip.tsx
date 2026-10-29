@@ -19,7 +19,13 @@ const TooltipContent = React.forwardRef<
     ref={ref}
     sideOffset={sideOffset}
     className={cn(
-      "z-50 overflow-hidden rounded-md border bg-popover/80 px-3 py-1.5 text-sm text-popover-foreground shadow-md animate-in fade-in-50 data-[side=bottom]:slide-in-from-top-1 data-[side=left]:slide-in-from-right-1 data-[side=right]:slide-in-from-left-1 data-[side=top]:slide-in-from-bottom-1",
+      "z-50 overflow-hidden rounded-md border bg-popover/80 px-3 py-1.5 text-sm text-popover-foreground shadow-md",
+      // Origin-aware scale from the trigger Radix points at.
+      "origin-[var(--radix-tooltip-content-transform-origin)]",
+      "duration-150 ease-out-strong",
+      "animate-in fade-in-0 zoom-in-[0.97] data-[side=bottom]:slide-in-from-top-1 data-[side=left]:slide-in-from-right-1 data-[side=right]:slide-in-from-left-1 data-[side=top]:slide-in-from-bottom-1",
+      "animate-out fade-out-0 zoom-out-[0.97] fill-mode-forwards",
+      "motion-reduce:animate-none",
       className
     )}
     {...props}

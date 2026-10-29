@@ -6,6 +6,8 @@ function UruguayFlagIcon() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className="rounded-sm"
+      aria-hidden="true"
+      focusable="false"
     >
       <mask
         id="a"

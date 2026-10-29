@@ -1,6 +1,19 @@
 @import "tailwindcss";
 @config "../../tailwind.config.js";
 
+/* Hover effects only on pointers that can actually hover. Tailwind already
+   gates `hover:` behind `(hover: hover)`; this narrows it to fine pointers so
+   touch and gamepad-driven UIs never get stuck in a hover state. */
+@custom-variant can-hover (@media (pointer: fine));
+
+/* Hero fills the viewport exactly. svh (small viewport height) is measured with
+   the mobile toolbars shown, so the layout doesn't jump when they collapse —
+   dvh would reflow mid-scroll. The vh line is the fallback for older browsers. */
+@utility min-h-hero {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

@@ -6,62 +6,60 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { useI18n } from "@/i18n/I18nProvider";
 import { EmailIcon, GithubIcon, LinkedinIcon } from "./Icons";
 
+const socialLinkClassName =
+  "relative inline-flex justify-center items-center w-12 sm:w-14 aspect-square rounded-full border border-white/10 bg-white/5 backdrop-blur-md z-0 text-white/50 transition-[color,background-color,border-color,transform] duration-150 ease-out-strong can-hover:hover:border-white/20 can-hover:hover:bg-white/10 can-hover:hover:text-white active:scale-[0.97] motion-reduce:active:scale-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/70";
+
+const socials = [
+  {
+    href: "https://github.com/Drumpy",
+    labelKey: "github",
+    Icon: GithubIcon,
+  },
+  {
+    href: "https://www.linkedin.com/in/ddosantos",
+    labelKey: "linkedin",
+    Icon: LinkedinIcon,
+  },
+  {
+    href: "mailto:ddosantos@hotmail.com",
+    labelKey: "email",
+    Icon: EmailIcon,
+  },
+] as const;
+
 function Socials() {
+  const t = useI18n();
+
   return (
-    <div className="flex justify-center gap-10 sm:gap-20 pb-40">
+    <div className="flex justify-center gap-4 sm:gap-6">
       <TooltipProvider>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <a
-              href="https://github.com/Drumpy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative inline-flex justify-center items-center text-[#6f6f7b] hover:text-[#E3E2F9] group w-[70px] sm:w-24 aspect-square rounded-full bg-linear-to-t from-[#242428] via-transparent to-[#242428] p-[2px] transition-all z-0 before:content-[''] before:absolute before:inset-0 before:rounded-full before:bg-linear-to-t before:from-[#0e37ac] before:via-transparent before:to-[#0e37ac] before:opacity-0 before:z-10 after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:right-0.5 after:bottom-0.5 after:rounded-full after:bg-[#101012] after:z-10 after:p-px hover:before:opacity-100 before:transition-all before:duration-200"
-              aria-label="My GitHub profile"
-            >
-              <GithubIcon className="z-20 w-10 h-10" />
-            </a>
-          </TooltipTrigger>
-          <TooltipContent>
-            <p>My GitHub profile</p>
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
-      <TooltipProvider>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <a
-              href="https://www.linkedin.com/in/ddosantos"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative inline-flex justify-center items-center text-[#6f6f7b] hover:text-[#E3E2F9] group w-[70px] sm:w-24 aspect-square rounded-full bg-linear-to-t from-[#242428] via-transparent to-[#242428] p-[2px] transition-all z-0 before:content-[''] before:absolute before:inset-0 before:rounded-full before:bg-linear-to-t before:from-[#0e37ac] before:via-transparent before:to-[#0e37ac] before:opacity-0 before:z-10 after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:right-0.5 after:bottom-0.5 after:rounded-full after:bg-[#101012] after:z-10 after:p-px hover:before:opacity-100 before:transition-all before:duration-200"
-              aria-label="My Linkedin profile"
-            >
-              <LinkedinIcon className="z-20 w-10 h-10" />
-            </a>
-          </TooltipTrigger>
-          <TooltipContent>
-            <p>My Linkedin profile</p>
-          </TooltipContent>
-        </Tooltip>
-      </TooltipProvider>
-      <TooltipProvider>
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <a
-              href="mailto:ddosantos@hotmail.com"
-              className="relative inline-flex justify-center items-center text-[#6f6f7b] hover:text-[#E3E2F9] group w-[70px] sm:w-24 aspect-square rounded-full bg-linear-to-t from-[#242428] via-transparent to-[#242428] p-[2px] transition-all z-0 before:content-[''] before:absolute before:inset-0 before:rounded-full before:bg-linear-to-t before:from-[#0e37ac] before:via-transparent before:to-[#0e37ac] before:opacity-0 before:z-10 after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:right-0.5 after:bottom-0.5 after:rounded-full after:bg-[#101012] after:z-10 after:p-px hover:before:opacity-100 before:transition-all before:duration-200"
-              aria-label="My personal email"
-            >
-              <EmailIcon className="z-20 w-10 h-10" />
-            </a>
-          </TooltipTrigger>
-          <TooltipContent>
-            <p>My email</p>
-          </TooltipContent>
-        </Tooltip>
+        {socials.map(({ href, labelKey, Icon }) => {
+          const label = t.socials[labelKey];
+
+          return (
+            <Tooltip key={href}>
+              <TooltipTrigger asChild>
+                <a
+                  href={href}
+                  target={href.startsWith("http") ? "_blank" : undefined}
+                  rel={
+                    href.startsWith("http") ? "noopener noreferrer" : undefined
+                  }
+                  aria-label={label}
+                  className={socialLinkClassName}
+                >
+                  <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
+                </a>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>{label}</p>
+              </TooltipContent>
+            </Tooltip>
+          );
+        })}
       </TooltipProvider>
     </div>
   );
