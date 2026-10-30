@@ -107,7 +107,7 @@ const projects: Project[] = [
       },
       {
         name: "PartyKit",
-        href: "https://partykit.io/",
+        href: "https://github.com/partykit/partykit",
         Icon: PartyKitIcon,
       },
       { name: "Vercel", href: "https://vercel.com/", Icon: VercelIcon },
